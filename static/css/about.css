@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+}
+
+#main{
+    display: flex;
+}
+.image{
+    width:280px ;
+    height: 250px;
+}
+.mydiv{
+    margin-right: 10px;
+}
+button{
+    background-color: #a41515;
+      width:50px ;
+    height: 100px;
+    border-radius: 10px;
+}

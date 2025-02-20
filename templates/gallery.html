@@ -6,11 +6,35 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gallery page</title>
-    
-    {% load static %}
-    
+
+
 </head>
+
+    <style>
+        h1{
+            text-align: center;
+            background-color: black;
+            line-height: 80px;
+            color: #4e06dd;
+        }
+        img{
+            width: 280px;
+            height: 250px;
+        }
+    </style>
+
+    {% load static %}
+
+ <link rel="icon" href="{% static 'assets/img_7.png' %}">
+
 <body>
+
+
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'gallery' %}">Gallery</a>
+<a href="{% url 'home' %}">Home</a>
+
+
 <h1>MY GALLERY</h1>
 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, assumenda beatae consequatur corporis eaque impedit ipsam iure magni maiores natus numquam optio quae sequi similique, voluptatem! Perferendis rerum tenetur vitae?</span><span>Adipisci autem eum expedita explicabo ipsam libero maxime mollitia nulla, odit officiis perferendis qui temporibus, tenetur totam vero. Aliquam blanditiis dolore dolores earum esse modi neque obcaecati officiis, soluta vel.</span></p>
 <img src="{% static 'assets/img_1.png'%}" alt="">

@@ -9,13 +9,14 @@
 
 
     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
     <style>
 
         h1{
             text-align: center;
             background-color: black;
-            colour:white;
+            colour: rgba(46, 214, 195, 0.86);
             line-height: 80px;
         }
         h1:hover{
@@ -25,6 +26,10 @@
     </style>
 </head>
 <body>
+
+<a href="{% url 'about' %}">About</a>
+<a href="{% url 'gallery' %}">Gallery</a>
+
 
 <h1>QuickDash App</h1>
 <img src="{% static 'assets/img_1.png'%}" alt="">
